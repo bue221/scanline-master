@@ -6,6 +6,7 @@ import { Fundamentos } from './pages/Fundamentos';
 import { PasoAPaso } from './pages/PasoAPaso';
 import { Historia } from './pages/Historia';
 import { Laboratorio } from './pages/Laboratorio';
+import { Aplicaciones } from './pages/Aplicaciones';
 
 function NotFound() {
   return (
@@ -30,7 +31,8 @@ export default function App() {
           <Route path="/fundamentos" element={<Fundamentos />} />
           <Route path="/simulador"   element={<PasoAPaso />} />
           <Route path="/historia"    element={<Historia />} />
-          <Route path="/laboratorio" element={<Laboratorio />} />
+          <Route path="/laboratorio"  element={<Laboratorio />} />
+          <Route path="/aplicaciones" element={<Aplicaciones />} />
           <Route path="*"            element={<NotFound />} />
         </Routes>
         <Footer />

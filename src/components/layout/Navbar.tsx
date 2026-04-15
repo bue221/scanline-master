@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import { Home, BookOpen, Play, Clock, FlaskConical } from 'lucide-react';
+import { Home, BookOpen, Play, Clock, FlaskConical, Cpu } from 'lucide-react';
 
 interface NavItem {
   to: string;
@@ -13,6 +13,7 @@ const navItems: NavItem[] = [
   { to: '/simulador',    label: 'Paso a Paso',  icon: <Play size={16} /> },
   { to: '/historia',     label: 'Historia',     icon: <Clock size={16} /> },
   { to: '/laboratorio',  label: 'Laboratorio',  icon: <FlaskConical size={16} /> },
+  { to: '/aplicaciones', label: 'Aplicaciones', icon: <Cpu size={16} /> },
 ];
 
 export function Navbar() {
