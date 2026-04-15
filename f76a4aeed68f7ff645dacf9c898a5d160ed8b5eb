@@ -1,0 +1,27 @@
+src/App.tsx
+  8410ed4d38b7e425 9,34-35
+src/pages/Aplicaciones.tsx
+  8410ed4d38b7e425 1-478
+src/components/layout/Navbar.tsx
+  8410ed4d38b7e425 2,16
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.2.8",
+  "base_commit_sha": "f76a4aeed68f7ff645dacf9c898a5d160ed8b5eb",
+  "prompts": {
+    "8410ed4d38b7e425": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ac5868e8-b075-4e33-9295-6b0c2a4c5116",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "bue221",
+      "messages": [],
+      "total_additions": 507,
+      "total_deletions": 2,
+      "accepted_lines": 507,
+      "overriden_lines": 0
+    }
+  }
+}
