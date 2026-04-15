@@ -1,8 +1,10 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { Code2 } from 'lucide-react';
 import { ScanlineCanvas } from '../components/simulator/ScanlineCanvas';
 import { StepControls } from '../components/simulator/StepControls';
 import { AETTable } from '../components/simulator/AETTable';
 import { StepConsole } from '../components/simulator/StepConsole';
+import { CodeModal } from '../components/simulator/CodeModal';
 import { PRESETS } from '../core/scanline/presets';
 import { generateSteps } from '../core/scanline/stepper';
 import type { PresetName } from '../core/scanline/types';
@@ -16,6 +18,7 @@ export function PasoAPaso() {
   const [stepIndex, setStepIndex] = useState(0);
   const [playing, setPlaying] = useState(false);
   const [speed, setSpeed] = useState<Speed>(1);
+  const [codeOpen, setCodeOpen] = useState(false);
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   const vertices = PRESETS[preset];
@@ -102,6 +105,15 @@ export function PasoAPaso() {
             Navega subpaso a subpaso y ve cómo evoluciona la AET en tiempo real.
           </p>
         </div>
+
+        {/* Botón Ver código */}
+        <button
+          onClick={() => setCodeOpen(true)}
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-slate-200 bg-white text-slate-700 text-sm font-medium hover:border-indigo-300 hover:text-indigo-700 hover:bg-indigo-50 transition-colors shadow-sm"
+        >
+          <Code2 size={15} />
+          Ver código
+        </button>
 
         {/* Selector de preset */}
         <div className="flex items-center gap-2">
@@ -199,6 +211,8 @@ export function PasoAPaso() {
           ))}
         </div>
       </div>
+      {/* Modal de código */}
+      <CodeModal open={codeOpen} onClose={() => setCodeOpen(false)} />
     </main>
   );
 }
