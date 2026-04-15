@@ -1,0 +1,27 @@
+src/pages/PasoAPaso.tsx
+  8410ed4d38b7e425 2,7,21,109-117,214-215
+src/components/layout/Footer.tsx
+  8410ed4d38b7e425 3-20
+src/components/simulator/CodeModal.tsx
+  8410ed4d38b7e425 1-324
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.2.8",
+  "base_commit_sha": "16218c170fa057bffe2c5eb65d3a494149a05cda",
+  "prompts": {
+    "8410ed4d38b7e425": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ac5868e8-b075-4e33-9295-6b0c2a4c5116",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "bue221",
+      "messages": [],
+      "total_additions": 356,
+      "total_deletions": 5,
+      "accepted_lines": 380,
+      "overriden_lines": 0
+    }
+  }
+}
