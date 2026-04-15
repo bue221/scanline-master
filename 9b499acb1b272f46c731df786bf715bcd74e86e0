@@ -1,0 +1,23 @@
+src/components/simulator/ScanlineCanvas.tsx
+  8410ed4d38b7e425 166-172,183-184,193-194,198,203,217,225,227,231,235-236
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.2.8",
+  "base_commit_sha": "9b499acb1b272f46c731df786bf715bcd74e86e0",
+  "prompts": {
+    "8410ed4d38b7e425": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ac5868e8-b075-4e33-9295-6b0c2a4c5116",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "bue221",
+      "messages": [],
+      "total_additions": 19,
+      "total_deletions": 12,
+      "accepted_lines": 43,
+      "overriden_lines": 0
+    }
+  }
+}
